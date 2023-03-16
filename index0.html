@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>HTML 5 Local storage project</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, sahrink-to-fit=no">
+        <meta name="rating" content='General'/>
+        <meta name="expires" content="never"/>
+        <meta name="language" content='English, EN'/>
+        <meta name="description" content="shopping cart porject with HTML5 and Javascript">
+        <meta name="keywords" content="HTML5,CSS,Javascript, html5 session storage, html local storage">
+        <meta name="author" content="dcwebmarkers.com">
+        <script src="Storage.js"></script>
+        <link rel="stylesheet" href="StorageStyle.css">
+    </head>
+
+  <body>
+    <form name="Shoppinglist">
+        <fieldset>
+            <legend>Shopping cart</legend>
+            <label>item:<input type="text" name="name"></label>
+            <label>Quantity:<input type="text" name="data"></label><br>
+
+            <input type="button" value="Save" onclick="Saveitem()">
+            <input type="button" value="Update" onclick="Modifyitem()">
+            <input type="button" value="Delete" onclick="Removeitem()">
+        </fieldset>
+        <div id="oitems_table">
+            <h2>Shopping List</h2>
+            <table id="list"></table>
+            <label><input type="button" value="Clear" onclick="Clearall()"> Delete all items</label>
+        </div>
+    </form>
+  </body>  
+</html>
